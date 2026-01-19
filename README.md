@@ -58,11 +58,13 @@ https://www.kaggle.com/datasets/alifatahi/multi-class-neurological-disorder-mcnd
 *(Dataset not included in this repository due to size constraints.)*
 
 ---
+
 ## 📁 Sample Dataset
 
 This repository includes a small sample dataset with a few MRI images per class
 (Healthy, Alzheimer’s, Multiple Sclerosis, Brain Tumor) for demonstration and
 repository structure reference only. The full dataset is not included.
+
 ---
 
 ## 🛠 Model & Training
