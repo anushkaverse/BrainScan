@@ -27,7 +27,7 @@ st.markdown(
 @st.cache_resource
 def load_model():
     return tf.keras.models.load_model(
-        "model/final_brain_multi_disease_model.keras"
+        "model/final_brain_multi_disease_model.keras(1)"
     )
 
 model = load_model()
