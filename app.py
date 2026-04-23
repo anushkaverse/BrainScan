@@ -1,3 +1,9 @@
+try:
+    import tensorflow as tf
+    MODEL_AVAILABLE = True
+except:
+    MODEL_AVAILABLE = False
+    
 import streamlit as st
 import tensorflow as tf
 import numpy as np
@@ -52,6 +58,10 @@ def overlay_heatmap(img, heatmap):
     heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
     superimposed_img = heatmap * 0.4 + img
     return superimposed_img
+
+if not MODEL_AVAILABLE:
+    st.error("Model cannot run on this server (Python version issue).")
+    st.stop()
 
 # Prediction
 if uploaded_file is not None:
